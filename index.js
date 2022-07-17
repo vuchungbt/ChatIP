@@ -34,7 +34,9 @@ function myTimer() {
             				
 			//-------vnchat.me----------------
 			let url_chat = 'https://api.cloudflare.com/client/v4/zones/'+DNSzoneID_chat+'/dns_records/'+id_chat;
-            let body_chat = {
+            console.log('url_chat:',url_chat);
+			
+			let body_chat = {
                 "type":"A",
                 "name":"vnchat.me",
                 "content":ip,
@@ -43,7 +45,7 @@ function myTimer() {
                 }
             
                 try {
-                    const datares_chat = (await axios.put(url_chat, body_chat, {
+                    const datares= (await axios.put(url_chat, body_chat, {
                         headers: {
                         'Content-Type': 'application/json',
                         'Authorization' : CLAPIKey_chat
@@ -51,7 +53,7 @@ function myTimer() {
                       }
                     )).data;
                     
-                    if (datares_chat && datares_chat.success==true) {
+                    if (datares && datares.success==true) {
                         
                         console.log('Change vnchat.me success to ',ip);
                     }
