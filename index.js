@@ -17,7 +17,6 @@ const id_chat="c5162746681f3bd114ff120eff4ef184";
 let oldIP = '';
 
 var HourInMilliseconds = 1000 * 60 * 60;
-let localpath='/home/vuchung/server_site/blw/uploadsFile/'
 
 let myVar = setInterval(myTimer, 30000);
 let x = 0;
