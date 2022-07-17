@@ -11,7 +11,7 @@ const CLAPIKey="Bearer eS8H1pzyxMQk31_tulDUKi4r0a8Qq_SDA9KvRoHb";
 
 //---- vnchat.me
 const DNSzoneID_chat="899b5688cecabad1a6bfb9d95ee2b109";
-const CLAPIKey_chat="Bearer hF9CtI3PvbjbxzpRmVLwr96jOm9lby0TIFpQzuyR";
+const CLAPIKey_chat="Bearer hmhidcB71dkGTbWjE-aZ-O9TmD_YxPm0m-2iGDx0";
 const id_chat="b35922b25ef3974fafb270c6f2691e3c";
 
 let oldIP = '';
